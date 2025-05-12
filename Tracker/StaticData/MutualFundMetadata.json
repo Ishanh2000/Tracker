@@ -1,0 +1,101 @@
+﻿[
+  {
+    "id": "DspSmallCapRegGrw",
+    "fundHouse": "DSP",
+    "fundName": "Small Cap",
+    "plan": "Regular",
+    "mode": "Growth",
+    "isin": "INF740K01797",
+    "internalFundCode": "157",
+    "originalBenchmarkTri": "NiftySmallCap250Tri",
+    "navHistoryUrl": "https://api.mfapi.in/mf/105989"
+  },
+  {
+    "id": "HdfcMidCapOpportunitiesRegGrw",
+    "fundHouse": "HDFC",
+    "fundName": "Mid-Cap Opportunities",
+    "plan": "Regular",
+    "mode": "Growth",
+    "isin": "INF179K01CR2",
+    "internalFundCode": "MCOG",
+    "originalBenchmarkTri": "NiftyMidCap150Tri",
+    "navHistoryUrl": "https://api.mfapi.in/mf/105758"
+  },
+  {
+    "id": "IciciPrudentialBluechipRegGrw",
+    "fundHouse": "ICICI Prudential",
+    "fundName": "Bluechip",
+    "plan": "Regular",
+    "mode": "Growth",
+    "isin": "INF109K01BL4",
+    "internalFundCode": "1191",
+    "originalBenchmarkTri": "Nifty100Tri",
+    "navHistoryUrl": "https://api.mfapi.in/mf/108466"
+  },
+  {
+    "id": "IciciPrudentialMulticapRegGrw",
+    "fundHouse": "ICICI Prudential",
+    "fundName": "Multicap",
+    "plan": "Regular",
+    "mode": "Growth",
+    "isin": "INF109K01613",
+    "internalFundCode": "121",
+    "originalBenchmarkTri": "Nifty500Multicap502525Tri",
+    "navHistoryUrl": "https://api.mfapi.in/mf/101228"
+  },
+  {
+    "id": "KotakEmergingEquityRegGrw",
+    "fundHouse": "Kotak",
+    "fundName": "Emerging Equity",
+    "plan": "Regular",
+    "mode": "Growth",
+    "isin": "INF174K01DS9",
+    "internalFundCode": "123",
+    "originalBenchmarkTri": "Nifty500Tri",
+    "navHistoryUrl": "https://api.mfapi.in/mf/104908"
+  },
+  {
+    "id": "MiraeAssetElssTaxSaverRegGrw",
+    "fundHouse": "Mirae Asset",
+    "fundName": "ELSS Tax Saver",
+    "plan": "Regular",
+    "mode": "Growth",
+    "isin": "INF769K01DK3",
+    "internalFundCode": "TSRG",
+    "originalBenchmarkTri": "Nifty500Tri",
+    "navHistoryUrl": "https://api.mfapi.in/mf/135784"
+  },
+  {
+    "id": "NipponIndiaMidCap150IndexDrcGrw",
+    "fundHouse": "Nippon India",
+    "fundName": "Midcap 150 Index",
+    "plan": "Direct",
+    "mode": "Growth",
+    "isin": "INF204KB18Z7",
+    "internalFundCode": "NPAG",
+    "originalBenchmarkTri": "NiftyMidCap150Tri",
+    "navHistoryUrl": "https://api.mfapi.in/mf/148726"
+  },
+  {
+    "id": "UtiNifty50IndexDrcGrw",
+    "fundHouse": "UTI",
+    "fundName": "Nifty 50 Index",
+    "plan": "Direct",
+    "mode": "Growth",
+    "isin": "INF789F01XA0",
+    "internalFundCode": "NID2",
+    "originalBenchmarkTri": "Nifty50Tri",
+    "navHistoryUrl": "https://api.mfapi.in/mf/120716"
+  },
+  {
+    "id": "UtiNiftyNext50IndexDrcGrw",
+    "fundHouse": "UTI",
+    "fundName": "Nifty Next 50 Index",
+    "plan": "Direct",
+    "mode": "Growth",
+    "isin": "INF789FC12T1",
+    "internalFundCode": "NYG1",
+    "originalBenchmarkTri": "NiftyNext50Tri",
+    "navHistoryUrl": "https://api.mfapi.in/mf/143341"
+  }
+]

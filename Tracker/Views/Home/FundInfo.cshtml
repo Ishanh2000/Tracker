@@ -1,0 +1,176 @@
+﻿@{
+    ViewData["Title"] = "Fund Info";
+}
+
+<style>
+
+    .try-again-link {
+        font-weight: 600;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+</style>
+
+<script>
+    
+    const loadFundTypes = () => {
+
+        const showFundTypeLoader = (show) => {
+            try {
+                document.querySelector('#fundTypeLoader_wrapper').innerHTML = !show ? `` : `
+                    <div class="spinner-border spinner-border-sm text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                `;
+            }
+            catch { }
+        };
+
+        const showFundTypeLoadError = (show) => {
+            try {
+                document.querySelector('#fundTypeLoadError_wrapper').innerHTML = !show ? `` : `
+                    <div class="alert alert-danger" role="alert">
+                        Unable to load Fund Types. Please
+                        <u class="try-again-link" onclick="loadFundTypes()">try again</u>
+                        later.
+                    </div>
+                `;
+            }
+            catch { }
+        };
+
+        const showFundTypeList = (show, fundTypes) => {
+            try {
+                // Index, TRI, Stock, Mutual Fund, Insurance, etc.
+                const optionHtmlNodes = (fundTypes || []).map(fundType => `
+                    <option value="${fundType.optionValue}">${fundType.optionName}</option>
+                `);
+                document.querySelector('#fundTypeList_wrapper').innerHTML = !show ? `` : `
+                    <select id="fundType" name="fundType" class="form-control form-select"
+                        onchange="loadFundNamesForSelectedFundType()">
+                        <option value="" selected disabled>-- Please choose an option --</option>
+                        ${optionHtmlNodes.join('')}
+                    </select>
+                `;
+            }
+            catch { }
+        };
+        
+        showFundTypeLoader(true);
+        showFundTypeLoadError(false);
+        showFundTypeList(false, null);
+
+        fetch('/api/v1/funds/fund-types').then(resp => resp.json()).then(
+            resp => {
+                showFundTypeLoader(false);
+                showFundTypeList(true, resp);
+            },
+            error => {
+                showFundTypeLoader(false);
+                showFundTypeLoadError(true);
+            }
+        );
+    };
+
+    const loadFundNamesForSelectedFundType = () => {
+
+        const fundType = document.querySelector('#fundType').value;
+
+        const showFundNameLoader = (show) => {
+            try {
+                document.querySelector('#fundNameLoader_wrapper').innerHTML = !show ? `` : `
+                    <div class="spinner-border spinner-border-sm text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                `;
+            }
+            catch { }
+        };
+
+        const showFundNameLoadError = (show) => {
+            try {
+                document.querySelector('#fundNameLoadError_wrapper').innerHTML = !show ? `` : `
+                    <div class="alert alert-danger" role="alert">
+                        Unable to load Fund Names. Please
+                        <u class="try-again-link" onclick="loadFundTypes()">try again</u>
+                        later.
+                    </div>
+                `;
+            }
+            catch { }
+        };
+
+        const showFundNameList = (show, fundNames) => {
+            try {
+                document.querySelector('#fundNameFormGroup_wrapper').innerHTML = `
+                    <div class="form-group mt-4">
+                        <label for="fundType" class="form-label mb-2 fw-bold">Fund Name</label>
+                        <span id="fundNameLoader_wrapper"></span>
+                        <div id="fundNameLoadError_wrapper"></div>
+                        <div id="fundNameList_wrapper"></div>
+                    </div>
+                `;
+
+                // Nifty 50 Index, DSP Small Cap Reg Grw, etc.
+                const optionHtmlNodes = (fundNames || []).map(fundName => `
+                    <option value="${fundName.optionValue}">${fundName.optionName}</option>
+                `);
+                document.querySelector('#fundNameList_wrapper').innerHTML = !show ? `` : `
+                    <select id="fundName" name="fundName" class="form-control form-select">
+                        <option value="" selected disabled>-- Please choose an option --</option>
+                        ${optionHtmlNodes.join('')}
+                    </select>
+                `;
+            }
+            catch { }
+        };
+
+        showFundNameLoader(true);
+        showFundNameLoadError(false);
+        showFundNameList(false, null);
+
+        fetch(`/api/v1/funds/fund-types/${fundType}/funds`).then(resp => resp.json()).then(
+            resp => {
+                showFundNameLoader(false);
+                showFundNameList(true, resp);
+            },
+            error => {
+                showFundNameLoader(false);
+                showFundNameLoadError(true);
+            }
+        );
+    };
+
+</script>
+
+<div>
+    <h1 class="display-4">Fund Info</h1>
+    <p>
+        Select fund type and fund name from the dropdown below. Optionally select dates too.
+    </p>
+</div>
+
+<div>
+
+    <form class="col-md-6">
+
+        <!-- Fund Type (Index, TRI, Stock, MF, Insurance, etc.) -->
+        <div class="form-group">
+            <label for="fundType" class="form-label mb-2 fw-bold">Fund Type</label>
+            <span id="fundTypeLoader_wrapper"></span>
+            <div id="fundTypeLoadError_wrapper"></div>
+            <div id="fundTypeList_wrapper"></div>
+        </div>
+
+        <!-- Fund Name (Nifty 50 Index, DSP Small Cap Reg Grw, etc.) -->
+        <div id="fundNameFormGroup_wrapper"></div>
+
+    </form>
+
+</div>
+
+<script>
+    // Upon initialization
+    loadFundTypes();
+</script>
