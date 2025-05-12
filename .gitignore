@@ -1,0 +1,28 @@
+# Build artifacts
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.vscode/
+
+# ASP.NET specific
+appsettings.Development.json
+appsettings.Local.json
+
+# Logs and temporary files
+*.log
+*.vs/
+**/.vs/
+
+# Node dependencies (if applicable)
+node_modules/
+
+# Visual Studio files
+.vscode/
+.vs/
+.idea/
+
+# Dependencies
+packages/

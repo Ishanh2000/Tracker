@@ -1,0 +1,62 @@
+﻿[
+  {
+    "triType": "Nifty50Tri",
+    "triName": "Nifty 50 (TRI)",
+    "baseIndexType": "Nifty50Index"
+  },
+  {
+    "triType": "NiftyNext50Tri",
+    "triName": "Nifty Next 50 (TRI)",
+    "baseIndexType": "NiftyNext50Index"
+  },
+  {
+    "triType": "Nifty100Tri",
+    "triName": "Nifty 100 (TRI)",
+    "baseIndexType": "Nifty100Index"
+  },
+  {
+    "triType": "NiftyMidCap150Tri",
+    "triName": "Nifty Mid Cap 150 (TRI)",
+    "baseIndexType": "NiftyMidCap150Index"
+  },
+  {
+    "triType": "Nifty200Tri",
+    "triName": "Nifty 200 (TRI)",
+    "baseIndexType": "Nifty200Index"
+  },
+  {
+    "triType": "NiftyLargeMidCap250Tri",
+    "triName": "Nifty Large Mid Cap 250 (TRI)",
+    "baseIndexType": "NiftyLargeMidCap250Index"
+  },
+  {
+    "triType": "NiftySmallCap250Tri",
+    "triName": "Nifty Small Cap 250 (TRI)",
+    "baseIndexType": "NiftySmallCap250Index"
+  },
+  {
+    "triType": "NiftyMidSmallCap400Tri",
+    "triName": "Nifty Mid Small Cap 400 (TRI)",
+    "baseIndexType": "NiftyMidSmallCap400Index"
+  },
+  {
+    "triType": "Nifty500Tri",
+    "triName": "Nifty 500 (TRI)",
+    "baseIndexType": "Nifty500Index"
+  },
+  {
+    "triType": "Nifty500MultiCap502525Tri",
+    "triName": "Nifty 500 Multi Cap 50:25:25 (TRI)",
+    "baseIndexType": "Nifty500MultiCap502525Index"
+  },
+  {
+    "triType": "NiftyMicroCap250Tri",
+    "triName": "Nifty Micro Cap 250 (TRI)",
+    "baseIndexType": "NiftyMicroCap250Index"
+  },
+  {
+    "triType": "NiftyTotalMarketTri",
+    "triName": "Nifty Total Market (TRI)",
+    "baseIndexType": "NiftyTotalMarketIndex"
+  }
+]

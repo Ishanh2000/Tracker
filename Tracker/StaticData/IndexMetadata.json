@@ -1,0 +1,134 @@
+﻿[
+  {
+    "indexType": "Nifty50Index",
+    "indexName": "Nifty 50 (Index)",
+    "methodology": "Free Float Market Capitalization",
+    "numConstituents": 50,
+    "launchDate": "1996-04-22",
+    "baseDate": "1995-11-03",
+    "baseValue": 1000.0000,
+    "calculationFrequency": "Real-Time",
+    "indexRebalancing": "Semi-Annually (March 31, September 30)"
+  },
+  {
+    "indexType": "NiftyNext50Index",
+    "indexName": "Nifty Next 50 (Index)",
+    "methodology": "Periodic Capped Free Float",
+    "numConstituents": 50,
+    "launchDate": "1996-12-24",
+    "baseDate": "1996-11-04",
+    "baseValue": 1000.0000,
+    "calculationFrequency": "Real-Time",
+    "indexRebalancing": "Semi-Annually (March 31, September 30)"
+  },
+  {
+    "indexType": "Nifty100Index",
+    "indexName": "Nifty 100 (Index)",
+    "methodology": "Free Float Market Capitalization",
+    "numConstituents": 100,
+    "launchDate": "2005-12-01",
+    "baseDate": "2003-01-01",
+    "baseValue": 1000.0000,
+    "calculationFrequency": "Real-Time",
+    "indexRebalancing": "Semi-Annually (March 31, September 30)"
+  },
+  {
+    "indexType": "NiftyMidCap150Index",
+    "indexName": "Nifty Mid Cap 150 (Index)",
+    "methodology": "Free Float Market Capitalization",
+    "numConstituents": 150,
+    "launchDate": "2016-04-01",
+    "baseDate": "2005-04-01",
+    "baseValue": 1000.0000,
+    "calculationFrequency": "Real-Time",
+    "indexRebalancing": "Semi-Annually (March 31, September 30)"
+  },
+  {
+    "indexType": "Nifty200Index",
+    "indexName": "Nifty 200 (Index)",
+    "methodology": "Free Float Market Capitalization",
+    "numConstituents": 200,
+    "launchDate": "2011-07-19",
+    "baseDate": "2004-01-01",
+    "baseValue": 1000.0000,
+    "calculationFrequency": "Real-Time",
+    "indexRebalancing": "Semi-Annually (March 31, September 30)"
+  },
+  {
+    "indexType": "NiftyLargeMidCap250Index",
+    "indexName": "Nifty Large Mid Cap 250 (Index)",
+    "methodology": "Periodic Capped Free Float",
+    "numConstituents": 250,
+    "launchDate": "2017-11-30",
+    "baseDate": "2005-04-01",
+    "baseValue": 1000.0000,
+    "calculationFrequency": "Real-Time",
+    "indexRebalancing": "Semi-Annually (March 31, September 30)"
+  },
+  {
+    "indexType": "NiftySmallCap250Index",
+    "indexName": "Nifty Small Cap 250 (Index)",
+    "methodology": "Free Float Market Capitalization",
+    "numConstituents": 250,
+    "launchDate": "2016-04-01",
+    "baseDate": "2005-04-01",
+    "baseValue": 1000.0000,
+    "calculationFrequency": "Real-Time",
+    "indexRebalancing": "Semi-Annually (March 31, September 30)"
+  },
+  {
+    "indexType": "NiftyMidSmallCap400Index",
+    "indexName": "Nifty Mid Small Cap 400 (Index)",
+    "methodology": "Free Float Market Capitalization",
+    "numConstituents": 400,
+    "launchDate": "2016-04-01",
+    "baseDate": "2005-04-01",
+    "baseValue": 1000.0000,
+    "calculationFrequency": "Real-Time",
+    "indexRebalancing": "Semi-Annually (March 31, September 30)"
+  },
+  {
+    "indexType": "Nifty500Index",
+    "indexName": "Nifty 500 (Index)",
+    "methodology": "Free Float Market Capitalization",
+    "numConstituents": 500,
+    "launchDate": null,
+    "baseDate": "1995-01-01",
+    "baseValue": 1000.0000,
+    "calculationFrequency": "Real-Time",
+    "indexRebalancing": "Semi-Annually (March 31, September 30)"
+  },
+  {
+    "indexType": "Nifty500MultiCap502525Index",
+    "indexName": "Nifty 500 Multi Cap 50:25:25 (Index)",
+    "methodology": "Periodic Capped Free Float",
+    "numConstituents": 500,
+    "launchDate": "2020-12-02",
+    "baseDate": "2005-04-01",
+    "baseValue": 1000.0000,
+    "calculationFrequency": "Real-Time",
+    "indexRebalancing": "Semi-Annually (March 31, September 30)"
+  },
+  {
+    "indexType": "NiftyMicroCap250Index",
+    "indexName": "Nifty Micro Cap 250 (Index)",
+    "methodology": "Free Float Market Capitalization",
+    "numConstituents": 251,
+    "launchDate": "2021-05-10",
+    "baseDate": "2005-04-01",
+    "baseValue": 1000.0000,
+    "calculationFrequency": "Real-Time",
+    "indexRebalancing": "Semi-Annually (March 31, September 30)"
+  },
+  {
+    "indexType": "NiftyTotalMarketIndex",
+    "indexName": "Nifty Total Market (Index)",
+    "methodology": "Free Float Market Capitalization",
+    "numConstituents": 751,
+    "launchDate": "2021-10-13",
+    "baseDate": "2005-04-01",
+    "baseValue": 1000.0000,
+    "calculationFrequency": "Real-Time",
+    "indexRebalancing": "Semi-Annually (March 31, September 30)"
+  }
+]
